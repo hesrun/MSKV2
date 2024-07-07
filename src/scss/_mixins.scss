@@ -1,0 +1,77 @@
+@mixin hover {
+    @media (any-hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+@mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}
+
+@mixin scrollbars(
+    $size,
+    $foreground-color,
+    $background-color: mix($foreground-color, white 50%)
+) {
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: $sm) {
+        @content;
+    }
+}
+@mixin md {
+    @media only screen and (max-width: $md) {
+        @content;
+    }
+}
+@mixin lg {
+    @media only screen and (max-width: $lg) {
+        @content;
+    }
+}
+@mixin xl {
+    @media only screen and (max-width: $xl) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media only screen and (max-width: $xxl) {
+        @content;
+    }
+}

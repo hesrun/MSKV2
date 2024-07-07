@@ -1,0 +1,56 @@
+.jquery-modal {
+    z-index: 100;
+}
+.blocker {
+    backdrop-filter: blur(5px);
+    background: rgba(black, 0.4);
+}
+
+.modal {
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    a.close-modal {
+        background: none;
+        width: 24px;
+        height: 24px;
+        right: 15px;
+        top: 15px;
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: black;
+        }
+        &:before {
+            rotate: -45deg;
+        }
+        &:after {
+            rotate: 45deg;
+        }
+        @include hover {
+            opacity: 0.5;
+        }
+    }
+    @include sm {
+        width: 100%;
+    }
+}
+.modal-map {
+    padding: 15px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        padding-right: 40px;
+    }
+    iframe {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+}

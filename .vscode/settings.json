@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/css"
+        }
+    ],
+    "files.autoSaveDelay": 10000,
+    "css.completion.completePropertyWithSemicolon": false,
+    "scss.completion.completePropertyWithSemicolon": false

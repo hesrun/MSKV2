@@ -1,0 +1,98 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    scrollbar-gutter: stable;
+}
+body {
+    font-family: 'Onest', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    scrollbar-gutter: stable;
+    color: $black;
+}
+input,
+select,
+button {
+    font-family: inherit;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+b {
+    font-weight: 500;
+}
+strong {
+    font-weight: 400;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-gap;
+    padding-right: $container-gap;
+}
+.container-fluid {
+    max-width: 100%;
+}
+.main {
+    padding-top: 60px;
+}
+.page-section {
+    margin-bottom: 60px;
+}
+.section-title {
+    margin-bottom: 40px;
+}
+
+.img-fluid {
+    width: 100%;
+}
+.img-responsive {
+    max-width: 100%;
+}
+a {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.color-orange {
+    color: $orange;
+}
+.font-20 {
+    font-size: 20px;
+}
+hr {
+    border: none;
+    margin: 0;
+    height: 2px;
+    background: $orange;
+}

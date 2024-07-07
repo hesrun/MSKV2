@@ -1,0 +1,133 @@
+.dont-sell {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    &__text {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+.send-request {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &__button {
+        width: 100%;
+        max-width: 300px;
+    }
+    .button_icon {
+        font-size: 32px;
+    }
+}
+.props-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+.props-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__icon {
+        font-size: 40px;
+    }
+    &__text {
+        font-size: 20px;
+    }
+    &__time {
+        font-size: 14px;
+        color: $orange;
+    }
+}
+.better-then-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    align-items: center;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.fast-and-ease {
+    background: $black;
+    position: relative;
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    color: #fff;
+    border-radius: 25px 25px 0 25px;
+    overflow: hidden;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        height: 40px;
+        width: 130%;
+        left: 50%;
+        translate: -50% 0;
+        rotate: -3deg;
+        background: $orange;
+    }
+}
+
+.professional-expertise {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 115px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.letters {
+    display: flex;
+    &__item {
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        min-width: 40px;
+        text-transform: uppercase;
+        color: #b5b5b5;
+        border-bottom: 2px transparent solid;
+        transition: all 0.3s;
+        @include hover {
+            color: $black;
+            border-bottom-color: $black;
+        }
+        &_active {
+            border-bottom-color: $black;
+            color: $black;
+        }
+        &:first-child {
+            text-transform: none;
+            padding: 0 15px;
+        }
+    }
+}
+
+.c-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    &__item {
+        display: flex;
+        font-weight: 400;
+        align-items: center;
+        gap: 25px;
+    }
+    i {
+        font-size: 24px;
+    }
+}
