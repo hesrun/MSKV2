@@ -29,6 +29,9 @@ h2 {
     font-size: 80px;
     font-weight: 400;
 }
+.h2-small {
+    font-size: 65px;
+}
 h3 {
     font-size: 30px;
     font-weight: 500;
@@ -86,6 +89,12 @@ a {
 
 .color-orange {
     color: $orange;
+}
+.color-red {
+    color: $red;
+}
+.color-green {
+    color: $green;
 }
 .font-20 {
     font-size: 20px;
