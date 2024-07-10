@@ -98,6 +98,7 @@
 .letters {
     display: flex;
     margin-bottom: 40px;
+    flex-wrap: wrap;
     &__item {
         font-size: 14px;
         font-weight: 500;
@@ -110,6 +111,7 @@
         color: #b5b5b5;
         border-bottom: 2px transparent solid;
         transition: all 0.3s;
+
         @include hover {
             color: $black;
             border-bottom-color: $black;
@@ -119,6 +121,7 @@
             color: $black;
         }
         &:first-child {
+            flex: 0 0 auto;
             text-transform: none;
             padding: 0 15px;
         }

@@ -1,6 +1,7 @@
 "use strict";
 
 var swiper = new Swiper('.swiper', {
+  loop: true,
   navigation: {
     nextEl: '.reviews-next',
     prevEl: '.reviews-prev'

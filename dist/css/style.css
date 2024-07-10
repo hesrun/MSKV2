@@ -222,6 +222,14 @@ a:hover {
   color: #3aa938;
 }
 
+.color-whatsapp {
+  color: #43cd40;
+}
+
+.color-telegram {
+  color: #2ca8ed;
+}
+
 .font-20 {
   font-size: 20px;
 }
@@ -331,6 +339,79 @@ hr {
     rotate: 360deg;
   }
 }
+.footer {
+  background: #111827;
+  color: white;
+  padding: 40px 0;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr;
+  gap: 30px 100px;
+}
+.footer__logo {
+  align-self: center;
+  grid-row: 2 span;
+}
+.footer__company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer .adress__street {
+  font-size: 16px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__tel {
+  font-size: 30px;
+  text-decoration: none;
+}
+@media (any-hover: hover) {
+  .footer__tel:hover {
+    color: #e2ba4e;
+  }
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer__messenger {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer__messenger-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (any-hover: hover) {
+  .footer__messenger-link:hover {
+    color: #e2ba4e;
+  }
+}
+.footer__messenger-link i {
+  font-size: 20px;
+}
+.footer__legal {
+  grid-column-start: 2;
+  display: flex;
+  gap: 30px;
+}
+.footer__legal-link {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.footer__made {
+  font-size: 14px;
+}
+
 .header {
   background: #111827;
   color: white;
@@ -565,6 +646,7 @@ hr {
 .letters {
   display: flex;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 .letters__item {
   font-size: 14px;
@@ -590,6 +672,7 @@ hr {
   color: #111827;
 }
 .letters__item:first-child {
+  flex: 0 0 auto;
   text-transform: none;
   padding: 0 15px;
 }

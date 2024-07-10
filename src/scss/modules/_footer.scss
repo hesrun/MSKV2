@@ -1,0 +1,68 @@
+.footer {
+    background: $black;
+    color: white;
+    padding: 40px 0;
+    &__container {
+        display: grid;
+        grid-template-columns: auto 2fr 1fr;
+        gap: 30px 100px;
+    }
+    &__logo {
+        align-self: center;
+        grid-row: 2 span;
+    }
+    &__company-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .adress__street {
+        font-size: 16px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__tel {
+        font-size: 30px;
+        text-decoration: none;
+        @include hover {
+            color: $orange;
+        }
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    &__messenger {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        &-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @include hover {
+                color: $orange;
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+    &__legal {
+        grid-column-start: 2;
+        display: flex;
+        gap: 30px;
+        &-link {
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+    &__made {
+        font-size: 14px;
+    }
+}
