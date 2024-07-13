@@ -20,7 +20,7 @@
          <div class="container header__top-line-container">
             <adress class="adress">
                <span class="adress__street">Москва, Новоспасский переулок 3к2</span>
-               <a href="" class="button button_white button_small">Схема проезда</a>
+               <a href="" class="button button_white button_small openMap">Схема проезда</a>
             </adress>
             <div class="header__contacts">
                <a href="" class="button button_whatsapp button_icon">
@@ -113,7 +113,7 @@
                </div>
             </div>
          </section>
-         <div class="page-section">
+         <section class="page-section">
             <h2 class="section-title">
                Оцениваем дороже конкурентов
             </h2>
@@ -156,8 +156,8 @@
                   </div>
                </div>
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <h2 class="section-title">
                Выплачиваем до 95% стоимости
             </h2>
@@ -212,8 +212,8 @@
                   </a>
                </div>
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <h3 class="section-title">
                Профессиональная экспертиза <br> и оценка часов
             </h3>
@@ -241,8 +241,8 @@
                         </span>
                </div>
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <h2 class="section-title h2-small">
                Принимаем к залогу более 150 брендов
             </h2>
@@ -316,8 +316,8 @@
                   </div>
                </div>
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <h3 class="section-title">
                Сравнение залога с продажей часов
             </h3>
@@ -391,8 +391,8 @@
                   </div>
                </div>
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <div class="gradient-card gradient-card_inverse">
                <h3>Заявка на кредит под залог часов</h3>
                <form class="request-form">
@@ -446,8 +446,8 @@
                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
                политикой конфиденциальности
             </div>
-         </div>
-         <div class="page-section">
+         </section>
+         <section class="page-section">
             <div class="faq-a-review">
                <div>
                   <h3 class="section-title">Вопрос — ответ</h3>
@@ -688,7 +688,8 @@
                   </div>
                </div>
             </div>
-         </div>
+         </section>
+      </div>
    </main>
    <footer class="footer">
       <div class="container footer__container">
@@ -700,7 +701,7 @@
                <span class="adress__street">
                     Москва, Новоспасский переулок 3к2
                 </span>
-               <a href="" class="button button_white button_small">
+               <a href="" class="button button_white button_small openMap">
                   Схема проезда
                </a>
             </adress>
@@ -745,9 +746,20 @@
    <script defer src="js/main.min.js"></script>
    <div id="modalMap" class="modal modal-map">
       <div class="modal-map__title">
-         УЛ. ХАМОВНИЧЕСКИЙ ВАЛ, Д. 36
+         МОСКВА, НОВОСПАССКИЙ ПЕРЕУЛОК 3К2
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.0829156457994!2d37.55650967708539!3d55.72231119433899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b8541f00d15%3A0xb0d379ac03488a22!2z0KXQsNC80L7QstC90LjRh9C10YHQutC40Lkg0JLQsNC7INGD0LsuLCAzNiwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExOTA0OA!5e0!3m2!1sru!2scz!4v1719772205446!5m2!1sru!2scz" loading="lazy"></iframe>
+      <div class="modal-map__body">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.3840871290527!2d37.654191777086!3d55.73445519340393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54adddff6f959%3A0xe2fd7d262079f441!2z0J3QvtCy0L7RgdC_0LDRgdGB0LrQuNC5INC_0YAt0LQsIDMsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUxNzI!5e0!3m2!1sru!2scz!4v1720899050781!5m2!1sru!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </div>
+   <div id="modalSuccess" class="modal modal-success">
+      <div class="modal-success__wrap">
+         <i class="icon-checkmark-badge"></i>
+         <b>Спасибо!</b>
+         <span>
+            Мы в самое ближайшее <br> время свяжемся с вами
+        </span>
+      </div>
    </div>
 </body>
 
