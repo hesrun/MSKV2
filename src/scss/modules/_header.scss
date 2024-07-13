@@ -13,24 +13,45 @@
             flex-wrap: wrap;
             gap: 15px;
         }
+        @include sm {
+            padding: 15px 0;
+            gap: 15px;
+        }
     }
     &__bottom-line {
         padding: 40px 0;
+        @include md {
+            padding: 20px 0;
+        }
         &-container {
             display: flex;
             align-items: flex-end;
             flex-wrap: wrap;
             gap: 30px;
+            @include sm {
+                gap: 30px 15px;
+                display: grid;
+                grid-template-columns: 100px 1fr;
+            }
         }
     }
     &__logo {
         margin-right: 20px;
+        @include sm {
+            margin: 0;
+            img {
+                max-width: 100%;
+            }
+        }
     }
     &__slogan {
         font-size: 20px;
         font-weight: 100;
         flex: 1 1 auto;
         margin-right: auto;
+        @include sm {
+            font-size: 16px;
+        }
     }
     &__about {
         display: flex;
@@ -38,6 +59,15 @@
         gap: 10px;
         font-size: 14px;
         max-width: 410px;
+        @include md {
+            max-width: 100%;
+        }
+        @include sm {
+            grid-column: 2 span;
+            i {
+                display: none;
+            }
+        }
         i {
             font-size: 24px;
         }
@@ -46,10 +76,19 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        @include sm {
+            width: 100%;
+            flex-direction: row-reverse;
+            gap: 15px;
+        }
     }
     &__tel {
         @include hover {
             color: $orange;
+        }
+        @include sm {
+            font-size: 20px;
+            margin-right: auto;
         }
     }
 }
@@ -62,5 +101,8 @@
         font-size: 12px;
         letter-spacing: 1px;
         text-transform: uppercase;
+    }
+    @include sm {
+        gap: 15px;
     }
 }

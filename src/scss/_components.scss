@@ -10,6 +10,7 @@
     text-decoration: none;
     border-width: 1px;
     border-style: solid;
+    white-space: nowrap;
     transition: all 0.3s;
     &_disabled {
         opacity: 0.5;
