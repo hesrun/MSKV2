@@ -12,6 +12,9 @@
     border-style: solid;
     white-space: nowrap;
     transition: all 0.3s;
+    @include xs {
+        padding: 0 15px;
+    }
     &_disabled {
         opacity: 0.5;
         pointer-events: none;

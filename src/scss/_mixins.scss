@@ -49,7 +49,11 @@
         scrollbar-track-color: $background-color;
     }
 }
-
+@mixin xs {
+    @media only screen and (max-width: $xs) {
+        @content;
+    }
+}
 @mixin sm {
     @media only screen and (max-width: $sm) {
         @content;

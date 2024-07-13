@@ -306,6 +306,11 @@ hr {
   white-space: nowrap;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 375px) {
+  .button {
+    padding: 0 15px;
+  }
+}
 .button_disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -794,6 +799,11 @@ hr {
 }
 .send-request .button_icon {
   font-size: 32px;
+}
+@media only screen and (max-width: 375px) {
+  .send-request {
+    gap: 15px;
+  }
 }
 
 .props-grid {

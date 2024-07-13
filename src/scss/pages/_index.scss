@@ -46,6 +46,9 @@
     .button_icon {
         font-size: 32px;
     }
+    @include xs {
+        gap: 15px;
+    }
 }
 .props-grid {
     display: grid;
