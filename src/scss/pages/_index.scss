@@ -196,7 +196,10 @@
     margin-bottom: 40px;
     flex-wrap: wrap;
     @include md {
+        overflow: auto;
         margin-bottom: 15px;
+        flex-wrap: nowrap;
+        @include scrollbars(0, transparent, transparent);
     }
     &__item {
         font-size: 14px;

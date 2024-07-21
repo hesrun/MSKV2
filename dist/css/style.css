@@ -985,7 +985,23 @@ hr {
 }
 @media only screen and (max-width: 768px) {
   .letters {
+    overflow: auto;
     margin-bottom: 15px;
+    flex-wrap: nowrap;
+  }
+  .letters::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .letters::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .letters::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .letters {
+    scrollbar-face-color: transparent;
+    scrollbar-track-color: transparent;
   }
 }
 .letters__item {
