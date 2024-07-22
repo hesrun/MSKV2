@@ -116,6 +116,20 @@ button {
 html {
   scrollbar-gutter: stable;
 }
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background: #e2ba4e;
+}
+html::-webkit-scrollbar-track {
+  background: #111827;
+}
+html {
+  scrollbar-face-color: #e2ba4e;
+  scrollbar-track-color: #111827;
+}
 
 body {
   font-family: "Onest", sans-serif;
@@ -710,6 +724,7 @@ hr {
 
 .modal-map {
   padding: 0;
+  max-width: 1200px;
 }
 .modal-map__title {
   padding: 15px;
@@ -720,7 +735,7 @@ hr {
   background: #e2ba4e;
 }
 .modal-map iframe {
-  aspect-ratio: 1/1;
+  aspect-ratio: 16/9;
   width: 100%;
 }
 
@@ -1338,6 +1353,13 @@ hr {
 .faq__content {
   display: none;
   padding-bottom: 15px;
+}
+.faq__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: disc;
+  margin: 15px 0 15px 30px;
 }
 
 .reviews {

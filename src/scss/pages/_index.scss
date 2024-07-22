@@ -497,6 +497,13 @@
     &__content {
         display: none;
         padding-bottom: 15px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            list-style: disc;
+            margin: 15px 0 15px 30px;
+        }
     }
 }
 

@@ -6,6 +6,7 @@
 }
 html {
     scrollbar-gutter: stable;
+    @include scrollbars(10px, $orange, $black);
 }
 body {
     font-family: 'Onest', sans-serif;
