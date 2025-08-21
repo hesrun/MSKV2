@@ -1450,3 +1450,31 @@ hr {
 .c-list i {
   font-size: 24px;
 }
+
+.coockies-note {
+  max-width: 500px;
+  background: white;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: 0 0 20px 0 rgba(17, 24, 39, 0.1);
+  z-index: 10;
+}
+.coockies-note__content {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .coockies-note__content {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .coockies-note {
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+}

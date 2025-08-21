@@ -566,3 +566,27 @@
         font-size: 24px;
     }
 }
+
+.coockies-note {
+    max-width: 500px;
+    background: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 0 0 20px 0 rgba($black, 0.1);
+    z-index: 10;
+    &__content {
+        display: grid;
+        gap: 1.5rem;
+        padding: 2rem 3rem;
+        @include sm {
+            padding: 1rem;
+            gap: 1rem;
+        }
+    }
+    @include sm {
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+    }
+}
