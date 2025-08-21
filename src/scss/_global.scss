@@ -144,3 +144,30 @@ hr {
     height: 2px;
     background: $orange;
 }
+
+.text {
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+        @include lg {
+            font-size: 2rem;
+        }
+    }
+    h3 {
+        margin-top: 2rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    p {
+        margin: 1rem 0;
+    }
+    ul {
+        display: grid;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        list-style: disc;
+        margin-left: 2rem;
+    }
+}
